@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Form</title>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Contact Information</legend>
+
+      
+        <div>
+            <label for="name">Full Name</label><br>
+            <input 
+                type="text" 
+                id="name" 
+                name="name"
+                required
+                aria-describedby="nameHelp"
+                placeholder="Enter your full name"
+            >
+           
+        </div>
+
+        <br>
+
+        
+        <div>
+            <label for="email">Email Address</label><br>
+            <input 
+                type="email" 
+                id="email" 
+                name="email"
+                required
+                pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                aria-describedby="emailHelp"
+                aria-invalid="false"
+                placeholder="user@example.com"
+            >
+           
+        </div>
+
+        <br>
+
+        <!-- Phone -->
+        <div>
+            <label for="phone">Phone Number</label><br>
+            <input 
+                type="tel" 
+                id="phone" 
+                name="phone"
+                required
+                pattern="^[0-9]{10,15}$"
+                aria-describedby="phoneHelp"
+                aria-invalid="false"
+                placeholder="Enter 10 to 15 digits"
+            >
+            
+        </div>
+
+        <br>
+
+        
+        <div>
+            <label for="date">Birth Date</label><br>
+            <input 
+                type="date" 
+                id="date" 
+                name="date"
+                required
+            >
+        </div>
+
+        <br>
+
+        <!-- Message -->
+        <div>
+            <label for="message">Message</label><br>
+            <textarea 
+                id="message" 
+                name="message" 
+                rows="4"
+                required
+                aria-describedby="messageHelp"
+            ></textarea>
+            <small id="messageHelp">Write your message here</small>
+        </div>
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
