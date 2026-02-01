@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h3>Weather Now</h3>
+      </div>
+      <div class="units">
+        <select id="unit-select" value="units">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+    </nav>
+
+    <main>
+      <div class="Tittle">
+        <h2>How's the Weather Today?</h2>
+      </div>
+
+      <div class="searchbox">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="search-button">Search</button>
+      </div>
+    </main>
+
+    <section class="content">
+      <div class="weather-display">
+        <div class="card">
+          <div>
+            <h4>Berlin, Germany</h4>
+            <p id="date-time">Tuesday, Aug 5 2025</p>
+          </div>
+          <i class="fa-solid fa-sun fa-xl" style="color: #ffd43b"></i>
+
+          <h2>20°C</h2>
+        </div>
+        <div class="details">
+          <p id="weather-description">
+            Feels Like <br />
+            <span>18°C</span>
+          </p>
+          <p id="temperature">
+            Temperature <br />
+            <span>20°C</span>
+          </p>
+          <p id="humidity">
+            Humidity <br />
+            <span>60%</span>
+          </p>
+          <p id="wind-speed">Wind Speed <br /><span>10 km/h</span></p>
+        </div>
+
+        <div>
+          <h2 style="margin: 20px 0px">Daily Forecast</h2>
+          <div class="forecst">
+            <div class="day">
+              <p>Wed</p>
+              <i class="fa-solid fa-cloud-sun fa-xl" style="color: #ffd43b"></i>
+              <div class="daydegree">
+                <p>20°C</p>
+                <p>22°C</p>
+              </div>
+            </div>
+            <div class="day">
+              <p>Thu</p>
+              <i
+                class="fa-solid fa-cloud-showers-heavy fa-xl"
+                style="color: #68768c"
+              ></i>
+              <div class="daydegree">
+                <p>20°C</p>
+                <p>22°C</p>
+              </div>
+            </div>
+            <div class="day">
+              <p>Fri</p>
+              <i class="fa-solid fa-sun fa-xl" style="color: #ffd43b"></i>
+              <div class="daydegree">
+                <p>20°C</p>
+                <p>22°C</p>
+              </div>
+            </div>
+            <div class="day">
+              <p>Sat</p>
+              <i class="fa-solid fa-cloud fa-xl" style="color: #a9a9a9"></i>
+              <div class="daydegree">
+                <p>20°C</p>
+                <p>22°C</p>
+              </div>
+            </div>
+            <div class="day">
+              <p>Sun</p>
+              <i
+                class="fa-solid fa-cloud-sun-rain fa-xl"
+                style="color: #68768c"
+              ></i>
+              <div class="daydegree">
+                <p>20°C</p>
+                <p>22°C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="asideforect">
+          <h3>Hourly Forecast</h3>
+          <select id="unit-select" value="units">
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+          </select>
+        </div>
+         
+        <div class="hourly-forecast">
+          <div class="hour">
+           <div style="display: flex ; align-items: center; gap: 5px">
+             <p>00:00</p>
+            <i class="fa-solid fa-cloud-sun fa-xl" style="color: #ffd43b"></i>
+           </div>
+            <p>20°C</p>
+          </div>
+          <div class="hour">
+            <div style="display: flex ; align-items: center; gap: 5px">
+            <p>01:00</p>
+            <i class="fa-solid fa-cloud-sun fa-xl" style="color: #ffd43b"></i>
+             </div>
+            <p>20°C</p>
+          </div>
+          <div class="hour">
+            <div style="display: flex ; align-items: center; gap: 5px">
+            <p>02:00</p>
+            <i class="fa-solid fa-cloud-sun fa-xl" style="color: #ffd43b"></i>
+             </div>
+            <p>20°C</p>
+          </div>
+          <div class="hour">
+            <div style="display: flex ; align-items: center; gap: 5px">
+            <p>03:00</p>
+            <i class="fa-solid fa-cloud-sun fa-xl" style="color: #ffd43b"></i>
+             </div>
+            <p>20°C</p>
+          </div>
+          <div class="hour">
+            <div style="display: flex ; align-items: center; gap: 5px">
+            <p>04:00</p>
+            <i class="fa-solid fa-cloud-sun fa-xl" style="color: #ffd43b"></i>
+             </div>
+            <p>20°C</p>
+          </div>
+          <div class="hour">
+            <div style="display: flex ; align-items: center; gap: 5px">
+            <p>04:00</p>
+            <i class="fa-solid fa-cloud-sun fa-xl" style="color: #ffd43b"></i>
+             </div>
+            <p>20°C</p>
+          </div>
+          <div class="hour">
+            <div style="display: flex ; align-items: center; gap: 5px">
+            <p>04:00</p>
+            <i class="fa-solid fa-cloud-sun fa-xl" style="color: #ffd43b"></i>
+             </div>
+            <p>20°C</p>
+          </div>
+          <div class="hour">
+            <div style="display: flex ; align-items: center; gap: 5px">
+            <p>04:00</p>
+            <i class="fa-solid fa-cloud-sun fa-xl" style="color: #ffd43b"></i>
+             </div>
+            <p>20°C</p>
+          </div>
+
+          
+      </aside>
+    </section>
+  </body>
+</html>

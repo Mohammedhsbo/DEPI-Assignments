@@ -1,0 +1,175 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body
+{
+    background-color:rgb(1, 1, 50);
+    color: #f3f1f1;
+    line-height: 1.6;
+    padding: 20px;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5rem;
+}
+select
+{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.253);
+    color:white;
+}
+option
+{
+   background-color:rgba(255, 255, 255, 0.155);
+    color:rgb(19, 18, 18);
+}
+main
+{
+    text-align: center;
+    margin-top: 50px;
+}
+.searchbox
+{
+    margin-top: 30px;
+}
+input[type="text"]
+{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+button
+{
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+.card
+{
+    background-color: rgba(75, 26, 209, 0.758);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card p
+{
+    margin: 5px 0;
+    color: rgba(254, 254, 254, 0.352);
+}
+.card h2
+{
+    font-size: 48px;
+    margin: 10px 0;
+}
+.card i
+{
+    font-size: 48px;
+}
+.details
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.details p
+{
+    margin: 0 15px;
+    background-color: rgba(231, 229, 236, 0.244);
+    padding: 30px;
+    border-radius: 10px;
+    color: #f3f1f1b4;
+    width: 200px;
+}
+.details span
+{
+    font-size: 30px;
+    margin: 10px 0 0 0;
+    color: #f3f1f1;
+}
+.day
+{
+    
+    background-color: rgba(231, 229, 236, 0.244);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+}
+.forecst
+{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.daydegree
+{
+    display: flex;
+    gap:20px;
+    width: 100%;
+}
+.content
+{
+    display: flex;
+    
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+aside
+{
+    background-color: rgba(255, 255, 255, 0.224);
+    padding: 20px;
+    border-radius: 20px;
+    height: 100%;
+}
+.asideforect
+{
+    display: flex;
+   
+    align-items: center;
+    gap: 20px;
+}
+.asideforect h3
+{
+    font-size: 24px;
+}
+
+.hourly-forecast
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.hour
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(208, 207, 210, 0.276);
+    padding: 10px;
+    border-radius: 10px;
+}
